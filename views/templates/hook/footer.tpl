@@ -8,7 +8,7 @@
 <script type="text/javascript">
     function QuickLook() {
         $.ajax({
-            url: '{$base_dir}modules/YOUR_MODULE/ajax-call.php',
+            url: '{$base_dir}modules/{$module_name}/ajax-call.php',
             type: 'get',
             data: 'ajax=true',
             success: function(data) {
